@@ -7,6 +7,7 @@
 <title>Feedback Page</title>
 </head>
 <body>
-This is Feedback Page
+This is Feedback Page for the car rental site
+    
 </body>
 </html>
