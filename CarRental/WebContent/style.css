@@ -126,21 +126,8 @@ body {
 
 #features {
   background: #EDF0C4;
-  padding: 14px;
-  margin: 0 -14px;
-}
-#features h2 {
-  position: relative;
-}
-#features ul {
-  float: left;
-  width: 49%;
-  margin: 1em 0;
-  padding: 0;
-}
-#features li {
-  list-style: square;
-  margin-left: 12px;
+  padding: 6px;
+  margin: 10px -2px;
 }
 
 /** footer **/

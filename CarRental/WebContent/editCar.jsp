@@ -1,5 +1,5 @@
 <head>
-<title>Add Car</title>
+<title>Edit Car</title>
 <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
 </head>
 <body>
@@ -23,22 +23,19 @@
 						<div id="gbox-bg">
 							<div id="gbox-grd">
 								<CENTER>
-								<h2>ADD YOUR CAR</h2>
+								<h2>EDIT YOUR CAR</h2>
 								<CENTER>
-								<form action="addCar">
-Car Name:<input name="cname" type="text"/>
+								<form action="editCar">
+Car Name:<input name="cname" type="text" value="${cardtl.name} "/>
 <br/> <br/>
-Car Model:<input name="cmodel" type="text"/>
+Car Model:<input name="cmodel" type="text" value="${cardtl.model} "/>
 <br/> <br/>
-Seats:<input name="cseat" type="text"/>
+Seats:<input name="cseat" type="text" value="${cardtl.seat} "/>
 <br/> <br/>
-Price:<input name="cprice" type="text"/>
+Price:<input name="cprice" type="text" value="${cardtl.price} "/>
 <br/> <br/>
-RentType :
-<input type="radio" name="cshareType" value="Shareable"> Shareable
-<input type="radio" name="cshareType" value="NonShareable">  NonShareable
-<br/> <br/>
-<input type="submit" value="Add Car"/>
+<input type="hidden" value="${cardtl.id}" name="carId">
+<input type="submit" value="Edit Car"/>
 </form>
 								
 					

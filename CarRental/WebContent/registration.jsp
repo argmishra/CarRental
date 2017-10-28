@@ -1,7 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>Registration</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,32 +30,30 @@
 								<br />
 								<form action="registration">
 									Name
-									<input type="text" name="name" required><br /> <br />
+									<input type="text" name="name" required><br/> <br/>
 									 UserName 
-									<input type="text" name="username" required> <br><br /> Password
-											<input type="password" name="password" required><br />
-											<br /> Retype Password
-											<input type="password" name="conformPassword" required><br />
-											<br />
-									 Email <input type="email" name="email" required><br /><br />
+									<input type="text" name="username" required> <br/> Password
+											<input type="password" name="password" required><br/>
+											<br/> Retype Password
+											<input type="password" name="conformPassword" required><br/>
+											<br/>
+									 Email <input type="email" name="email" required><br/><br/>
 									Contact Number
 									<input type="text" name="number" required><br />
-									<br /><br/>
+									<br/><br/>
 									<center> <input type="submit" value="Register"></center>
 <br/><br/>
-									<h2>FEATURED SERVICES</h2>
-									<br/><br/><br/>
+</form>
+									<div style=" padding: 6px;background: #EDF0C4;">
+									<center><h2>FEATURED SERVICES</h2></centra>
+									<br/>
 									<ul>
 										<li>Book car of your choice</li>
 										<li>Easy cancellation and modification</li>
-									</ul>
-									<ul>
 										<li>Add your car</li>
 										<li>Rent your car</li>
 									</ul>
-								
-								</form>
-							
+								</div>
 								
 								
 							</div>
