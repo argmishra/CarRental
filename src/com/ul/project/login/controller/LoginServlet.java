@@ -16,8 +16,6 @@ import com.ul.project.utilities.ReportUtilities;
 
 public class LoginServlet extends HttpServlet {
 
-
-
 	private static final long serialVersionUID = 4853235461621829561L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
