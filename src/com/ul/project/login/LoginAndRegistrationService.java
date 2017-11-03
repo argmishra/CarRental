@@ -1,14 +1,13 @@
 package com.ul.project.login;
 
 import javax.servlet.http.HttpServletRequest;
-
 import com.ul.project.constants.CarRentalConstants;
 import com.ul.project.dao.UserDetailDAO;
 import com.ul.project.dto.UserDetail;
 import com.ul.project.utilities.CarRentalUtilities;
 import com.ul.project.utilities.TokenEncriptOrDecriptUtility;
-/* For login access
-For changing password */
+/*For login access
+For changing password*/
 public class LoginAndRegistrationService {
 
 	public void savingUserDetails(String name,String username,String password,String mail, String number ) throws Exception {
