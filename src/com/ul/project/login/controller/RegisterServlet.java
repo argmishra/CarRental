@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.constants.CarRentalConstants;
 import com.ul.project.login.LoginAndRegistrationService;
-
+// For registration
 
 public class RegisterServlet extends HttpServlet {
 
