@@ -10,10 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.constants.CarRentalConstants;
 import com.ul.project.login.LoginAndRegistrationService;
-// For registration
+//For registration
 
 public class RegisterServlet extends HttpServlet {
-
 
 	private static final long serialVersionUID = -8913558013481663923L;
 
@@ -33,7 +32,5 @@ public class RegisterServlet extends HttpServlet {
 
 
 	}
-
-
 
 }
