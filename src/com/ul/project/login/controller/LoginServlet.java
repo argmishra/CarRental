@@ -2,7 +2,6 @@ package com.ul.project.login.controller;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -49,7 +48,6 @@ public class LoginServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 	}
-
 
 
 }
