@@ -16,6 +16,7 @@ import com.ul.project.factories.DataBaseFactory;
  */
 public class CarRentalDao implements ICarRentalDao{
 
+	/** The data base factory. */
 	DataBaseFactory dataBaseFactory = DataBaseFactory.getInstance();
 
 	/* (non-Javadoc)

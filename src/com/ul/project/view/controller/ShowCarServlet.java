@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.ul.project.dto.CarDetail;
+import com.ul.project.utilities.CarRentalUtilities;
 import com.ul.project.view.ViewCarService;
 
 
@@ -19,6 +20,7 @@ import com.ul.project.view.ViewCarService;
  */
 public class ShowCarServlet extends HttpServlet {
 
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -3937259410537320881L;
 
 	/* (non-Javadoc)
@@ -34,7 +36,7 @@ public class ShowCarServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("bookCar.jsp");  
 			rd.include(request,response);
 		}catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 
 

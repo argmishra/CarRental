@@ -10,8 +10,17 @@ import com.ul.project.dao.CarRentalDao;
 import com.ul.project.dto.BookingDetail;
 import com.ul.project.dto.CarDetail;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class CarRentalTestCase.
+ */
 public class CarRentalTestCase {
 
+	/**
+	 * Adding new car.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
 	public void addingNewCar() throws Exception {
 		AddandDeleteCarService addCar = new AddandDeleteCarService();
@@ -35,8 +44,13 @@ public class CarRentalTestCase {
 		assertEquals("UnBooked",detail.getStatus());
 	}
 
+	/**
+	 * Bookingand unbooking car.
+	 *
+	 * @throws Exception the exception
+	 */
 	@Test
-	public void bookingCar() throws Exception {
+	public void bookingandUnbookingCar() throws Exception {
 		CarRentalDao dao = new CarRentalDao();
 		String carid = Integer.toString(dao.gettingCarId());
 		dao.gettingCarDetails((carid)).getStatus();
@@ -49,8 +63,9 @@ public class CarRentalTestCase {
 		}else {
 			dao.updatingCarStatus(dao.gettingCarId());
 		}
-			
 		Assert.assertNotSame(presentStatus,dao.gettingCarDetails((carid)).getStatus());
 
 	}
 }
+
+

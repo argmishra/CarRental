@@ -17,6 +17,8 @@ import com.ul.project.factories.DataBaseFactory;
  * The Class CarSupportDAO.
  */
 public class CarSupportDAO implements  ICarSupportDAO {
+	
+	/** The data base factory. */
 	static DataBaseFactory dataBaseFactory = DataBaseFactory.getInstance();
 	/* (non-Javadoc)
 	 * @see com.ul.project.dao.ICarSupportDAO#savingFeebdback(com.ul.project.dto.FeedbackDetail)

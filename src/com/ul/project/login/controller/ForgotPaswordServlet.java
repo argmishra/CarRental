@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.login.LoginAndRegistrationService;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -34,7 +35,8 @@ public class ForgotPaswordServlet extends HttpServlet {
 			rd=request.getRequestDispatcher("login.jsp");  
 			rd.forward(request,response);
 		}catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+
 		}
 
 	}

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.edit.EditCarService;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -16,10 +17,10 @@ import com.ul.project.edit.EditCarService;
  * The Class EditCarServlet.
  */
 public class EditCarServlet extends HttpServlet {
-	
+
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
-   
+
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */
@@ -27,14 +28,15 @@ public class EditCarServlet extends HttpServlet {
 		try {			
 			EditCarService editCarsrvc = new EditCarService();
 			editCarsrvc.editingCar(request.getParameter("cname"),request.getParameter("cmodel"),request.getParameter("cseat")
-				,request.getParameter("cshareType"),request.getParameter("carId"),request.getParameter("cprice"));
+					,request.getParameter("cshareType"),request.getParameter("carId"),request.getParameter("cprice"));
 			RequestDispatcher rd=request.getRequestDispatcher("view");  
 			rd.forward(request,response);
 
-		} catch (Exception e) {e.printStackTrace();}
+		} catch (Exception e) {			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+		}
 
 
 	}
-	
+
 
 }

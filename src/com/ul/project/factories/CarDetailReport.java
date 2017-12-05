@@ -13,6 +13,10 @@ import com.ul.project.dao.CarSupportDAO;
 import com.ul.project.dto.CarDetail;
 import com.ul.project.utilities.ReportUtilities;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class CarDetailReport.
+ */
 public class CarDetailReport implements IReportFactory {
 
 	/**

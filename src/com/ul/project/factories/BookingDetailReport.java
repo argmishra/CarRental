@@ -13,6 +13,10 @@ import com.ul.project.dao.CarSupportDAO;
 import com.ul.project.dto.BookingDetail;
 import com.ul.project.utilities.ReportUtilities;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class BookingDetailReport.
+ */
 public class BookingDetailReport implements IReportFactory {
 
 	/**

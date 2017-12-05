@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.constants.CarRentalConstants;
 import com.ul.project.login.LoginAndRegistrationService;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -36,7 +37,8 @@ public class RegisterServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("login.jsp");  
 			rd.include(request,response);
 		} catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+
 		}
 
 

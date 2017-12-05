@@ -28,7 +28,6 @@ public interface IUserDetailDAO {
 	 * Validating user.
 	 *
 	 * @param username the username
-	 * @param request the request
 	 * @return the string
 	 * @throws Exception the exception
 	 */

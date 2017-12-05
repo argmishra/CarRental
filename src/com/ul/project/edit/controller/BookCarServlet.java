@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ul.project.utilities.CarRentalUtilities;
+
 
 // TODO: Auto-generated Javadoc
 /**
@@ -28,7 +30,7 @@ public class BookCarServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("PaymentType");  
 			rd.forward(request,response);
 		} catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 
 

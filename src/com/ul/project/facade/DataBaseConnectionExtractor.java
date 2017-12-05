@@ -9,6 +9,12 @@ public class DataBaseConnectionExtractor {
 	private DataBaseConnectionExtractor() {
 	}
 
+	/**
+	 * Gets the single instance of DataBaseConnectionExtractor.
+	 *
+	 * @return single instance of DataBaseConnectionExtractor
+	 * @throws Exception the exception
+	 */
 	public static DataBaseConnectionExtractor getInstance() throws Exception {
 		if(dbextractor==null) {
 			dbextractor = new DataBaseConnectionExtractor();}

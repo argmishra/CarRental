@@ -21,24 +21,46 @@ public class UserDetail {
 	/** The number. */
 	private String number;
 
+	/** The user type. */
 	private String userType;
 	
+	/** The frequency. */
 	private String frequency;
 
+	/**
+	 * Gets the user type.
+	 *
+	 * @return the user type
+	 */
 	public String getUserType() {
 		return userType;
 	}
 
+	/**
+	 * Sets the user type.
+	 *
+	 * @param userType the new user type
+	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}
 	
 	
 
+	/**
+	 * Gets the frequency.
+	 *
+	 * @return the frequency
+	 */
 	public String getFrequency() {
 		return frequency;
 	}
 
+	/**
+	 * Sets the frequency.
+	 *
+	 * @param frequency the new frequency
+	 */
 	public void setFrequency(String frequency) {
 		this.frequency = frequency;
 	}

@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.constants.CarRentalConstants;
 import com.ul.project.factories.ReportFactory;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -34,7 +35,7 @@ public class ReportServlet extends HttpServlet {
 			rd=request.getRequestDispatcher("view");  
 			rd.forward(request,response);
 		} catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 	}
 

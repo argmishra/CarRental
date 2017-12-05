@@ -12,9 +12,19 @@ import com.ul.project.constants.CarRentalConstants;
  */
 public class ReportUtilities {
 
+	/** The singleton object. */
 	public static ReportUtilities singletonObject;
+	
+	/**
+	 * Instantiates a new report utilities.
+	 */
 	private ReportUtilities() {}
 	 
+    /**
+     * Gets the single instance of ReportUtilities.
+     *
+     * @return single instance of ReportUtilities
+     */
     public static ReportUtilities getInstance()
     {
     	singletonObject = new ReportUtilities();
@@ -44,6 +54,7 @@ public class ReportUtilities {
 	 *
 	 * @param paragraph the paragraph
 	 * @param number the number
+	 * @throws Exception the exception
 	 */
 	public static void addEmptyLine(Paragraph paragraph, int number) throws Exception{
 		for (int i = 0; i < number; i++) {

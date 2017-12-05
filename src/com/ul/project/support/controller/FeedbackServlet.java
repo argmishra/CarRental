@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.support.SaveFeedback;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -27,12 +28,12 @@ public class FeedbackServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
 			SaveFeedback savingfb = new SaveFeedback();
-			savingfb.savingFeebdback(request.getParameter("fdTitle"), request.getParameter("fdDescription"));
+			savingfb.savingFeedback(request.getParameter("fdTitle"), request.getParameter("fdDescription"));
 			request.setAttribute("infoMsg", "Thank you for you feedbaack. Our team will get in touch with you soon");
 			RequestDispatcher rd=request.getRequestDispatcher("feedback.jsp");  
 			rd.forward(request,response);
 		} catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 
 	}

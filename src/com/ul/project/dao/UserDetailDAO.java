@@ -13,6 +13,8 @@ import com.ul.project.factories.DataBaseFactory;
  * The Class UserDetailDAO.
  */
 public class UserDetailDAO implements IUserDetailDAO{
+	
+	/** The data base factory. */
 	DataBaseFactory dataBaseFactory = DataBaseFactory.getInstance();
 
 	/* (non-Javadoc)

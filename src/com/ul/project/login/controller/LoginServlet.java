@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.ul.project.login.LoginAndRegistrationService;
+import com.ul.project.utilities.CarRentalUtilities;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -43,7 +44,7 @@ public class LoginServlet extends HttpServlet {
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 	}
 

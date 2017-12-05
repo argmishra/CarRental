@@ -16,7 +16,7 @@ public class CarRentalConstants {
 	public final static String DATABASE_USERNAME = "root";
 	
 	/** The Constant DATABASE_PASSWORD. */
-	public final static String DATABASE_PASSWORD = "root";
+	public final static String DATABASE_PASSWORD = "harsha";
 	
 	/** The Constant SUCCESFUL_REGISTRATION_MESSAGE. */
 	public final static String SUCCESFUL_REGISTRATION_MESSAGE = "Thank you for registration and please check your mail for more details.";

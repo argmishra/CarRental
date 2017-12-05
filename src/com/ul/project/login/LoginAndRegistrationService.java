@@ -29,6 +29,7 @@ public class LoginAndRegistrationService {
 	 * @param password the password
 	 * @param mail the mail
 	 * @param number the number
+	 * @param frequency the frequency
 	 * @throws Exception the exception
 	 */
 	public void savingUserDetails(String name,String username,String password,String mail, String number, String frequency) throws Exception {
@@ -48,6 +49,12 @@ public class LoginAndRegistrationService {
 		CarRentalUtilities.sendingEmail(usrdtl.gettingUserId(),mail,"registration");
 	}
 
+	/**
+	 * Gets the ting user type.
+	 *
+	 * @param frequency the frequency
+	 * @return the ting user type
+	 */
 	private String gettingUserType(String frequency) {
 		UserContext context=new UserContext();
 		UserState userState = null;

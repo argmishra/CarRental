@@ -5,8 +5,15 @@ import java.sql.DriverManager;
 
 import com.ul.project.constants.CarRentalConstants;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MySql.
+ */
 public class MySql implements DatabaseConnections {
 
+	/* (non-Javadoc)
+	 * @see com.ul.project.facade.DatabaseConnections#gettingDatabaseConnection()
+	 */
 	@Override
 	public Connection gettingDatabaseConnection() throws Exception {
 		Connection connection= null;

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.dto.CarDetail;
+import com.ul.project.utilities.CarRentalUtilities;
 import com.ul.project.view.ViewCarService;
 
 
@@ -39,7 +40,8 @@ public class ShowEditCarServlet extends HttpServlet {
 
 			}
 		}catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+
 		}
 
 	}

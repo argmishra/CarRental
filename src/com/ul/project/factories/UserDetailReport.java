@@ -13,12 +13,17 @@ import com.ul.project.dao.CarSupportDAO;
 import com.ul.project.dto.UserDetail;
 import com.ul.project.utilities.ReportUtilities;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class UserDetailReport.
+ */
 public class UserDetailReport implements IReportFactory {
 
 	/**
 	 * Appending data for user detail.
 	 *
 	 * @param document the document
+	 * @throws Exception the exception
 	 */
 	public void appendingDataForReport(Document document) throws Exception{
 

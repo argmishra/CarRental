@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.ul.project.add.AddandDeleteCarService;
+import com.ul.project.utilities.CarRentalUtilities;
 
 
 // TODO: Auto-generated Javadoc
@@ -30,7 +31,7 @@ public class DeleteBookingServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("view");  
 			rd.forward(request,response);
 		}catch (Exception e) {
-			e.printStackTrace();
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 	}
 

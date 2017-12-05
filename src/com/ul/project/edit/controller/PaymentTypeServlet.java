@@ -8,10 +8,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ul.project.utilities.CarRentalUtilities;
+
 /**
  * Servlet implementation class PaymentTypeServlet
  */
 public class PaymentTypeServlet extends HttpServlet {
+	
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -39,7 +43,8 @@ public class PaymentTypeServlet extends HttpServlet {
 				rd.forward(request,response);
 			}
 		}catch (Exception e) {
-			e.printStackTrace();		}
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+		}
 	}
 
 	/**

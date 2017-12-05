@@ -10,10 +10,18 @@ import com.ul.project.facade.DataBaseConnectionExtractor;
  */
 public class DataBaseFactory implements IDataBaseFactory {
 
+	/**
+	 * Instantiates a new data base factory.
+	 */
 	private DataBaseFactory() {
 
 	}
 
+	/**
+	 * Gets the single instance of DataBaseFactory.
+	 *
+	 * @return single instance of DataBaseFactory
+	 */
 	public static DataBaseFactory getInstance() {
 		DataBaseFactory	dbfactory = new DataBaseFactory();
 		return dbfactory;

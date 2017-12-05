@@ -10,7 +10,7 @@ public class FeedbackDetail {
 	/** The title. */
 	private String title;
 	
-	/** The String get name(). */
+	/** The description. */
 	private String description;
 	
 	/**

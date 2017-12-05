@@ -1,7 +1,6 @@
 package com.ul.project.payment;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,14 +11,23 @@ import javax.servlet.http.HttpSession;
 
 import com.ul.project.threads.ThreadBookCar;
 
+// TODO: Auto-generated Javadoc
 /**
- * Servlet implementation class DebitCardController
+ * Servlet implementation class DebitCardController.
  */
 public class DebitCardController extends HttpServlet {
+	
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = 1L;
 
 
 	/**
+	 * Do get.
+	 *
+	 * @param request the request
+	 * @param response the response
+	 * @throws ServletException the servlet exception
+	 * @throws IOException Signals that an I/O exception has occurred.
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

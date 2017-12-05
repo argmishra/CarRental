@@ -36,9 +36,9 @@ public class AddCarServlet extends HttpServlet  {
 			rd.forward(request,response);
 
 		} catch (Exception e) {
-			e.printStackTrace();
-			CarRentalUtilities.loggingError();
-			}
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
+
+		}
 
 
 	}

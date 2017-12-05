@@ -1,9 +1,21 @@
 package com.ul.project.car;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class DecoratorPattern.
+ */
 public class DecoratorPattern 
 {
+	
+	/** The price. */
 	int price;
 	
+	/**
+	 * Calc price.
+	 *
+	 * @param carType the car type
+	 * @return the int
+	 */
 	public int calcPrice(String carType)
 	{
 	if(carType.equalsIgnoreCase("luxury"))

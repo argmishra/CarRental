@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.ul.project.dto.CarDetail;
+import com.ul.project.utilities.CarRentalUtilities;
 import com.ul.project.view.ViewCarService;
 
 
@@ -37,7 +38,7 @@ public class ViewAllCarsServlet extends HttpServlet {
 			RequestDispatcher rd=request.getRequestDispatcher("viewCars.jsp");  
 			rd.forward(request,response);
 		}catch (Exception e) {
-			e.printStackTrace();		
+			CarRentalUtilities.loggingError(e, this.getClass().getSimpleName());
 		}
 
 	}

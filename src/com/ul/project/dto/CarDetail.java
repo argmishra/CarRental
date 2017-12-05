@@ -27,12 +27,23 @@ public class CarDetail {
 	/** The status. */
 	private String status;
 	
+	/** The car type. */
 	private String carType;
 	
+	/**
+	 * Gets the car type.
+	 *
+	 * @return the car type
+	 */
 	public String getCarType() {
 		return carType;
 	}
 
+	/**
+	 * Sets the car type.
+	 *
+	 * @param carType the new car type
+	 */
 	public void setCarType(String carType) {
 		this.carType = carType;
 	}

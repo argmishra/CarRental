@@ -20,8 +20,8 @@ public class AddandDeleteCarService {
 	 * @param cname the cname
 	 * @param cmodel the cmodel
 	 * @param cseat the cseat
-	 * @param cprice the cprice
 	 * @param cshareType the cshare type
+	 * @param carType the car type
 	 * @param request the request
 	 * @throws Exception the exception
 	 */

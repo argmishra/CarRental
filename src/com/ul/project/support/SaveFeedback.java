@@ -10,13 +10,13 @@ import com.ul.project.dto.FeedbackDetail;
 public class SaveFeedback {
 
 	/**
-	 * Saving feebdback.
+	 * Saving feedback.
 	 *
 	 * @param title the title
 	 * @param description the description
 	 * @throws Exception the exception
 	 */
-	public void savingFeebdback(String title,String description ) throws Exception {
+	public void savingFeedback(String title,String description ) throws Exception {
 		FeedbackDetail fbd = new FeedbackDetail();
 		fbd.setTitle(title);
 		fbd.setDescription(description);

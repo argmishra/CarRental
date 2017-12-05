@@ -6,6 +6,9 @@ public class LuxuryCar extends CarDecorator {
 		super(car);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.ul.project.car.CarDecorator#calcPrice()
+	 */
 	public int calcPrice()
 	{
 		int price=super.calcPrice()+1000;

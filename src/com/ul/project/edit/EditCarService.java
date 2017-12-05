@@ -13,11 +13,21 @@ import com.ul.project.utilities.CarRentalUtilities;
  */
 public class EditCarService {
 
+	/** The request. */
 	private HttpServletRequest request;
+	
+	/**
+	 * Instantiates a new edits the car service.
+	 */
 	public EditCarService() {
 		// TODO Auto-generated constructor stub
 	}
 
+	/**
+	 * Instantiates a new edits the car service.
+	 *
+	 * @param request the request
+	 */
 	public EditCarService(HttpServletRequest request) {
 		this.request = request;
 	}
@@ -28,9 +38,9 @@ public class EditCarService {
 	 * @param cname the cname
 	 * @param cmodel the cmodel
 	 * @param cseat the cseat
-	 * @param cprice the cprice
 	 * @param cshareType the cshare type
 	 * @param carId the car id
+	 * @param cprice the cprice
 	 * @throws Exception the exception
 	 */
 	public void editingCar(String cname,String cmodel,String cseat,String cshareType,String carId,String cprice) throws Exception {
@@ -43,14 +53,16 @@ public class EditCarService {
 		cardetail.setShare(cshareType);
 		cardetail.setStatus("UnBooked");
 		CarRentalDao dao = new CarRentalDao();
-		dao.editingCar(cardetail);	
+		dao.editingCar(cardetail);
+System.out.println("111111111111");	
 	}
 
 	/**
 	 * Booking car.
 	 *
 	 * @param id the id
-	 * @param request the request
+	 * @param usermail the usermail
+	 * @param paymentType the payment type
 	 * @throws Exception the exception
 	 */
 	public synchronized void bookingCar( String id, String usermail, String  paymentType) throws Exception{
